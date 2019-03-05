@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_structure_sample.dir/simple_queue.c.o"
   "CMakeFiles/data_structure_sample.dir/bucket_sample.c.o"
   "CMakeFiles/data_structure_sample.dir/simple_list.c.o"
+  "CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o"
   "data_structure_sample.pdb"
   "data_structure_sample"
 )

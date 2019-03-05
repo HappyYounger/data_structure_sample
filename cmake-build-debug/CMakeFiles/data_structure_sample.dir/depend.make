@@ -12,6 +12,7 @@ CMakeFiles/data_structure_sample.dir/main.c.o: ../main.c
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_list.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_queue.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_stack.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_worse.h
 
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../simple_list.c
@@ -25,4 +26,7 @@ CMakeFiles/data_structure_sample.dir/simple_queue.c.o: ../simple_stack.h
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../simple_stack.c
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../simple_stack.h
+
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o: ../stack_eight_queens_worse.c
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o: ../stack_eight_queens_worse.h
 

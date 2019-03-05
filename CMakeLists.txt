@@ -3,4 +3,4 @@ project(data_structure_sample C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(data_structure_sample main.c simple_stack.h simple_stack.c simple_queue.c simple_queue.h bucket_sample.c bucket_sample.h adt.h simple_list.c simple_list.h)
+add_executable(data_structure_sample main.c simple_stack.h simple_stack.c simple_queue.c simple_queue.h bucket_sample.c bucket_sample.h adt.h simple_list.c simple_list.h stack_eight_queens_worse.c stack_eight_queens_worse.h)

@@ -258,6 +258,33 @@ simple_stack.c.s:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/simple_stack.c.s
 .PHONY : simple_stack.c.s
 
+stack_eight_queens_worse.o: stack_eight_queens_worse.c.o
+
+.PHONY : stack_eight_queens_worse.o
+
+# target to build an object file
+stack_eight_queens_worse.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o
+.PHONY : stack_eight_queens_worse.c.o
+
+stack_eight_queens_worse.i: stack_eight_queens_worse.c.i
+
+.PHONY : stack_eight_queens_worse.i
+
+# target to preprocess a source file
+stack_eight_queens_worse.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.i
+.PHONY : stack_eight_queens_worse.c.i
+
+stack_eight_queens_worse.s: stack_eight_queens_worse.c.s
+
+.PHONY : stack_eight_queens_worse.s
+
+# target to generate assembly for a file
+stack_eight_queens_worse.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.s
+.PHONY : stack_eight_queens_worse.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,6 +309,9 @@ help:
 	@echo "... simple_stack.o"
 	@echo "... simple_stack.i"
 	@echo "... simple_stack.s"
+	@echo "... stack_eight_queens_worse.o"
+	@echo "... stack_eight_queens_worse.i"
+	@echo "... stack_eight_queens_worse.s"
 .PHONY : help
 
 

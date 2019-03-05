@@ -13,6 +13,7 @@ CMakeFiles/data_structure_sample.dir/main.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.c
@@ -26,3 +27,6 @@ CMakeFiles/data_structure_sample.dir/simple_stack.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.c
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.c
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.h

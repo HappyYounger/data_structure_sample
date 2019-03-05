@@ -5,8 +5,54 @@
 #include "simple_queue.h"
 #include "simple_list.h"
 #include "bucket_sample.h"
+#include "stack_eight_queens_worse.h"
 
 #define SIZE 10
+
+unsigned *get_random_unsigned_array(unsigned size) {
+
+    if (size > 0) {
+
+        unsigned *unsigned_array = malloc(sizeof(unsigned) * size);
+
+        srand(time(NULL));
+
+        for (int i = 0; i < size; ++i) {
+
+            unsigned_array[i] = rand() % 100;
+        }
+
+        return unsigned_array;
+    }
+
+    return NULL;
+}
+
+void destroy_random_unsigned_array(unsigned *unsigned_array) {
+
+    if (unsigned_array != NULL) {
+
+        free(unsigned_array);
+    }
+}
+void bucket_test(){
+
+    unsigned *unsigned_array = get_random_unsigned_array(SIZE);
+
+    print_unsigned_array(unsigned_array, SIZE);
+    bucket(unsigned_array, SIZE);
+
+    print_unsigned_array(unsigned_array, SIZE);
+    destroy_random_unsigned_array(unsigned_array);
+}
+
+
+void eight_queens_test(){
+
+    char chessboard[QUEEN_COUNT][QUEEN_COUNT];
+    init_chessboard(chessboard);
+    try_a_location(chessboard, 0, QUEEN_COUNT);
+}
 
 void queue_test() {
 
@@ -59,42 +105,16 @@ void list_test() {
     list_destroy(p_list);
 }
 
-unsigned *get_random_unsigned_array(unsigned size) {
 
-    if (size > 0) {
 
-        unsigned *unsigned_array = malloc(sizeof(unsigned) * size);
 
-        srand(time(NULL));
-
-        for (int i = 0; i < size; ++i) {
-
-            unsigned_array[i] = rand() % 100;
-        }
-
-        return unsigned_array;
-    }
-
-    return NULL;
-}
-
-void destroy_random_unsigned_array(unsigned *unsigned_array) {
-
-    if (unsigned_array != NULL) {
-
-        free(unsigned_array);
-    }
-}
 
 int main() {
 
-    unsigned *unsigned_array = get_random_unsigned_array(SIZE);
 
-    print_unsigned_array(unsigned_array, SIZE);
-    bucket(unsigned_array, SIZE);
+    eight_queens_test();
 
-    print_unsigned_array(unsigned_array, SIZE);
-    destroy_random_unsigned_array(unsigned_array);
+//    bucket_test();
 
     return 0;
 }

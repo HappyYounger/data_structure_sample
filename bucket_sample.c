@@ -11,7 +11,7 @@ int BASE = 1;
 int count = 0;
 int remain = 0, result = 0;
 
-int *bucket(unsigned *data, unsigned size) {
+unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
 
     _p_list p_list_array[10];
@@ -27,7 +27,7 @@ int *bucket(unsigned *data, unsigned size) {
 
         for (int i = 0; i < size; ++i) {
 
-            result = data[i] / BASE;
+            result = unsigned_array[i] / BASE;
             remain = result % 10;
 
             if (result == 0) {
@@ -35,7 +35,7 @@ int *bucket(unsigned *data, unsigned size) {
             }
 
             _adt adt;
-            adt.n = data[i];
+            adt.n = unsigned_array[i];
             list_add(p_list_array[remain], &adt);
         }
 
@@ -49,7 +49,7 @@ int *bucket(unsigned *data, unsigned size) {
             int i = 0;
             while (i < p_list_array[j]->size) {
 
-                data[index] = p_list_array[j]->header[i].n;
+                unsigned_array[index] = p_list_array[j]->header[i].n;
                 ++i;
                 ++index;
             }
@@ -64,14 +64,15 @@ int *bucket(unsigned *data, unsigned size) {
     }
 
 
+    return unsigned_array;
 }
 
-void print_unsigned_array(unsigned *data, unsigned size) {
+void print_unsigned_array(unsigned *unsigned_array, unsigned size) {
 
 
     for (unsigned i = 0; i < size; ++i) {
 
-        printf("%d%2c", data[i] , i == size - 1 ? '\n' : ',');
+        printf("%d%2c", unsigned_array[i], i == size - 1 ? '\n' : ',');
     }
 
 }
