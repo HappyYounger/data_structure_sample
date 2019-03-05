@@ -5,8 +5,6 @@
 #ifndef DATA_STRUCTURE_SAMPLE_STACK_EIGHT_QUEENS_WORSE_H
 #define DATA_STRUCTURE_SAMPLE_STACK_EIGHT_QUEENS_WORSE_H
 
-#define QUEEN_COUNT 8
-
 void init_chessboard(void *cb);
 
 void *copy_chessboard(void *cb, unsigned size);

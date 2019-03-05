@@ -150,6 +150,33 @@ bucket_sample.c.s:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/bucket_sample.c.s
 .PHONY : bucket_sample.c.s
 
+global.o: global.c.o
+
+.PHONY : global.o
+
+# target to build an object file
+global.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/global.c.o
+.PHONY : global.c.o
+
+global.i: global.c.i
+
+.PHONY : global.i
+
+# target to preprocess a source file
+global.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/global.c.i
+.PHONY : global.c.i
+
+global.s: global.c.s
+
+.PHONY : global.s
+
+# target to generate assembly for a file
+global.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/global.c.s
+.PHONY : global.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -258,6 +285,60 @@ simple_stack.c.s:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/simple_stack.c.s
 .PHONY : simple_stack.c.s
 
+stack_eight_queens_iterator.o: stack_eight_queens_iterator.c.o
+
+.PHONY : stack_eight_queens_iterator.o
+
+# target to build an object file
+stack_eight_queens_iterator.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o
+.PHONY : stack_eight_queens_iterator.c.o
+
+stack_eight_queens_iterator.i: stack_eight_queens_iterator.c.i
+
+.PHONY : stack_eight_queens_iterator.i
+
+# target to preprocess a source file
+stack_eight_queens_iterator.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.i
+.PHONY : stack_eight_queens_iterator.c.i
+
+stack_eight_queens_iterator.s: stack_eight_queens_iterator.c.s
+
+.PHONY : stack_eight_queens_iterator.s
+
+# target to generate assembly for a file
+stack_eight_queens_iterator.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.s
+.PHONY : stack_eight_queens_iterator.c.s
+
+stack_eight_queens_non_iterator.o: stack_eight_queens_non_iterator.c.o
+
+.PHONY : stack_eight_queens_non_iterator.o
+
+# target to build an object file
+stack_eight_queens_non_iterator.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o
+.PHONY : stack_eight_queens_non_iterator.c.o
+
+stack_eight_queens_non_iterator.i: stack_eight_queens_non_iterator.c.i
+
+.PHONY : stack_eight_queens_non_iterator.i
+
+# target to preprocess a source file
+stack_eight_queens_non_iterator.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.i
+.PHONY : stack_eight_queens_non_iterator.c.i
+
+stack_eight_queens_non_iterator.s: stack_eight_queens_non_iterator.c.s
+
+.PHONY : stack_eight_queens_non_iterator.s
+
+# target to generate assembly for a file
+stack_eight_queens_non_iterator.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.s
+.PHONY : stack_eight_queens_non_iterator.c.s
+
 stack_eight_queens_worse.o: stack_eight_queens_worse.c.o
 
 .PHONY : stack_eight_queens_worse.o
@@ -285,6 +366,33 @@ stack_eight_queens_worse.c.s:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.s
 .PHONY : stack_eight_queens_worse.c.s
 
+stack_eight_quees_simple.o: stack_eight_quees_simple.c.o
+
+.PHONY : stack_eight_quees_simple.o
+
+# target to build an object file
+stack_eight_quees_simple.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o
+.PHONY : stack_eight_quees_simple.c.o
+
+stack_eight_quees_simple.i: stack_eight_quees_simple.c.i
+
+.PHONY : stack_eight_quees_simple.i
+
+# target to preprocess a source file
+stack_eight_quees_simple.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.i
+.PHONY : stack_eight_quees_simple.c.i
+
+stack_eight_quees_simple.s: stack_eight_quees_simple.c.s
+
+.PHONY : stack_eight_quees_simple.s
+
+# target to generate assembly for a file
+stack_eight_quees_simple.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.s
+.PHONY : stack_eight_quees_simple.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -297,6 +405,9 @@ help:
 	@echo "... bucket_sample.o"
 	@echo "... bucket_sample.i"
 	@echo "... bucket_sample.s"
+	@echo "... global.o"
+	@echo "... global.i"
+	@echo "... global.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -309,9 +420,18 @@ help:
 	@echo "... simple_stack.o"
 	@echo "... simple_stack.i"
 	@echo "... simple_stack.s"
+	@echo "... stack_eight_queens_iterator.o"
+	@echo "... stack_eight_queens_iterator.i"
+	@echo "... stack_eight_queens_iterator.s"
+	@echo "... stack_eight_queens_non_iterator.o"
+	@echo "... stack_eight_queens_non_iterator.i"
+	@echo "... stack_eight_queens_non_iterator.s"
 	@echo "... stack_eight_queens_worse.o"
 	@echo "... stack_eight_queens_worse.i"
 	@echo "... stack_eight_queens_worse.s"
+	@echo "... stack_eight_quees_simple.o"
+	@echo "... stack_eight_quees_simple.i"
+	@echo "... stack_eight_quees_simple.s"
 .PHONY : help
 
 

@@ -7,12 +7,11 @@
 #include "bucket_sample.h"
 #include "simple_list.h"
 
-int BASE = 1;
-int count = 0;
-int remain = 0, result = 0;
-
 unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
+    int BASE = 1;
+    int count = 0;
+    int remain = 0, result = 0;
 
     _p_list p_list_array[10];
 
@@ -72,7 +71,7 @@ void print_unsigned_array(unsigned *unsigned_array, unsigned size) {
 
     for (unsigned i = 0; i < size; ++i) {
 
-        printf("%d%2c", unsigned_array[i], i == size - 1 ? '\n' : ',');
+        printf("%3d%c", unsigned_array[i], i == size - 1 ? '\n' : ',');
     }
 
 }

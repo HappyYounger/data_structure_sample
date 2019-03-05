@@ -5,18 +5,12 @@
 #include <stdio.h>
 #include <string.h>
 
-
+#include "global.h"
 #include "stack_eight_queens_worse.h"
-
-
-static const char INIT_CHAR = '#';
-static const char MARK_CHAR = 'X';
-static const char QUEEN = 'Q';
-static int count;
 
 void init_chessboard(void *cb) {
 
-    memset(cb, INIT_CHAR, QUEEN_COUNT * QUEEN_COUNT);
+    memset(cb, EQ_INIT_MARK, QUEEN_COUNT * QUEEN_COUNT);
 }
 
 void *copy_chessboard(void *cb, unsigned size) {
@@ -44,30 +38,30 @@ void mark_chessboard(void *cb, unsigned size, unsigned row_index, unsigned col_i
 
     char *tcb = cb;
 
-    tcb[size * row_index + col_index] = QUEEN;
+    tcb[size * row_index + col_index] = EQ_QUEEN_MARK;
 
     for (unsigned i = 0; i < size; ++i) {
 
         if (row_index != i) {
 
-            tcb[size * i + col_index] = MARK_CHAR;
+            tcb[size * i + col_index] = EQ_INVALID_MARK;
 
             unsigned col = col_index - (row_index - i);
 
             if (col >= 0 && col < size) {
-                tcb[size * i + col] = MARK_CHAR;
+                tcb[size * i + col] = EQ_INVALID_MARK;
             }
 
             col = col_index + row_index - i;
 
             if (col < size && col >= 0) {
-                tcb[size * i + col] = MARK_CHAR;
+                tcb[size * i + col] = EQ_INVALID_MARK;
             }
         }
 
         if (col_index != i) {
 
-            tcb[size * row_index + i] = MARK_CHAR;
+            tcb[size * row_index + i] = EQ_INVALID_MARK;
         }
     }
 }
@@ -80,7 +74,7 @@ void try_a_location(void *cb, unsigned row_index, unsigned size) {
 
         void *new_cb = copy_chessboard(cb, size);
 
-        if (tcb[size * row_index + i] == INIT_CHAR) {
+        if (tcb[size * row_index + i] == EQ_INIT_MARK) {
 
             mark_chessboard(new_cb, size, row_index, i);
 

@@ -135,6 +135,58 @@ CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.c -o CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.s
 
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o: CMakeFiles/data_structure_sample.dir/flags.make
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o: ../stack_eight_queens_iterator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o   -c /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.c
+
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.c > CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.i
+
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.c -o CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.s
+
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o: CMakeFiles/data_structure_sample.dir/flags.make
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o: ../stack_eight_queens_non_iterator.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o   -c /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.c
+
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.c > CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.i
+
+CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.c -o CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.s
+
+CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o: CMakeFiles/data_structure_sample.dir/flags.make
+CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o: ../stack_eight_quees_simple.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o   -c /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.c
+
+CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.c > CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.i
+
+CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.c -o CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.s
+
+CMakeFiles/data_structure_sample.dir/global.c.o: CMakeFiles/data_structure_sample.dir/flags.make
+CMakeFiles/data_structure_sample.dir/global.c.o: ../global.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/data_structure_sample.dir/global.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/data_structure_sample.dir/global.c.o   -c /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.c
+
+CMakeFiles/data_structure_sample.dir/global.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/data_structure_sample.dir/global.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.c > CMakeFiles/data_structure_sample.dir/global.c.i
+
+CMakeFiles/data_structure_sample.dir/global.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/data_structure_sample.dir/global.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.c -o CMakeFiles/data_structure_sample.dir/global.c.s
+
 # Object files for target data_structure_sample
 data_structure_sample_OBJECTS = \
 "CMakeFiles/data_structure_sample.dir/main.c.o" \
@@ -142,7 +194,11 @@ data_structure_sample_OBJECTS = \
 "CMakeFiles/data_structure_sample.dir/simple_queue.c.o" \
 "CMakeFiles/data_structure_sample.dir/bucket_sample.c.o" \
 "CMakeFiles/data_structure_sample.dir/simple_list.c.o" \
-"CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o"
+"CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o" \
+"CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o" \
+"CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o" \
+"CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o" \
+"CMakeFiles/data_structure_sample.dir/global.c.o"
 
 # External object files for target data_structure_sample
 data_structure_sample_EXTERNAL_OBJECTS =
@@ -153,9 +209,13 @@ data_structure_sample: CMakeFiles/data_structure_sample.dir/simple_queue.c.o
 data_structure_sample: CMakeFiles/data_structure_sample.dir/bucket_sample.c.o
 data_structure_sample: CMakeFiles/data_structure_sample.dir/simple_list.c.o
 data_structure_sample: CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o
+data_structure_sample: CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o
+data_structure_sample: CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o
+data_structure_sample: CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o
+data_structure_sample: CMakeFiles/data_structure_sample.dir/global.c.o
 data_structure_sample: CMakeFiles/data_structure_sample.dir/build.make
 data_structure_sample: CMakeFiles/data_structure_sample.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable data_structure_sample"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking C executable data_structure_sample"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/data_structure_sample.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

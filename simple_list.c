@@ -55,7 +55,10 @@ _p_list list_expand(_p_list p_list) {
         list_copy(p_list->header, src, p_list->size);
 
         free(src);
+        return p_list;
+
     }
+    return NULL;
 }
 
 void list_add(_p_list p_list, _padt padt) {
@@ -82,7 +85,7 @@ void list_move(_p_list p_list, unsigned index, int offset) {
                 list_expand(p_list);
             }
 
-            for (int i = p_list->size - 1; i >= (int)index; --i) {
+            for (int i = p_list->size - 1; i >= (int) index; --i) {
 
                 p_list->header[i + offset] = p_list->header[i];
             }
@@ -129,9 +132,9 @@ void list_insert(_p_list p_list, unsigned index, _padt padt) {
     }
 }
 
-void list_clear(_p_list p_list){
+void list_clear(_p_list p_list) {
 
-    if(p_list != NULL){
+    if (p_list != NULL) {
 
         p_list->size = 0;
     }
