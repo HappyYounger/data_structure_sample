@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/main.c
+stdio.h
+-
+stdlib.h
+-
+time.h
+-
+simple_queue.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
+simple_list.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
+bucket_sample.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
+adt.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
+simple_stack.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+adt.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
+
