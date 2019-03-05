@@ -8,11 +8,11 @@
 #include "global.h"
 
 
-int check_eight_queens_non_iterator_array(unsigned *column_index_array, unsigned row, unsigned col) {
+int check_eight_queens_non_iterator_array(char *column_index_array, unsigned row, unsigned col) {
 
-    for (int r = 0; r < row; ++r) {
+    for (unsigned r = 0; r < row; ++r) {
 
-        int c = column_index_array[r];
+        unsigned c = column_index_array[r];
         if (c == col || row - col == r - c || c + r == col + row) {
 
             return 0;
@@ -23,11 +23,11 @@ int check_eight_queens_non_iterator_array(unsigned *column_index_array, unsigned
 }
 
 
-unsigned *init_eight_queens_non_iterator_array(unsigned size) {
+char *init_eight_queens_non_iterator_array(unsigned size) {
 
     unsigned *column_index_array = malloc(sizeof(unsigned) * size);
 
-    for (int i = 0; i < size; ++i) {
+    for (unsigned i = 0; i < size; ++i) {
 
         column_index_array[i] = -1;
     }
@@ -35,7 +35,7 @@ unsigned *init_eight_queens_non_iterator_array(unsigned size) {
     return column_index_array;
 }
 
-void destroy_eight_queens_non_iterator_array(unsigned *column_index_array) {
+void destroy_eight_queens_non_iterator_array(char *column_index_array) {
 
     if (column_index_array != NULL) {
 
@@ -43,7 +43,7 @@ void destroy_eight_queens_non_iterator_array(unsigned *column_index_array) {
     }
 }
 
-void eight_queens_non_iterator(unsigned *column_index_array, unsigned size) {
+void eight_queens_non_iterator(char *column_index_array, unsigned size) {
 
     int r = 0, c = 0;
 
@@ -84,13 +84,13 @@ void eight_queens_non_iterator(unsigned *column_index_array, unsigned size) {
     }
 }
 
-void print_queens_non_iterator(unsigned *column_index_array, unsigned size) {
+void print_queens_non_iterator(char *column_index_array, unsigned size) {
 
-    for (int i = 0; i < size; ++i) {
+    for (unsigned i = 0; i < size; ++i) {
 
-        int col = column_index_array[i];
+        unsigned col = column_index_array[i];
 
-        for (int j = 0; j < size; ++j) {
+        for (unsigned j = 0; j < size; ++j) {
 
             printf("%c%c", j == col ? EQ_QUEEN_MARK : EQ_INIT_MARK, j == size - 1 ? '\n' : WHITE_CHAR);
         }

@@ -19,6 +19,7 @@ CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_stack.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_iterator.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_non_iterator.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_worse.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_quees_simple.h
 
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../simple_list.c

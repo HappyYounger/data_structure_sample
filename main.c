@@ -9,6 +9,7 @@
 #include "stack_eight_queens_worse.h"
 #include "stack_eight_queens_iterator.h"
 #include "stack_eight_queens_non_iterator.h"
+#include "stack_eight_quees_simple.h"
 
 unsigned *get_random_unsigned_array(unsigned size) {
 
@@ -55,7 +56,7 @@ void eight_queens_worse_test() {
     try_a_location(chessboard, 0, QUEEN_COUNT);
 }
 
-void eight_queen_iterator_test() {
+void eight_queens_iterator_test() {
 
     char *eight_queen_array = init_eight_queens_array(8);
     eight_queens(eight_queen_array, 8, 0);
@@ -63,6 +64,14 @@ void eight_queen_iterator_test() {
     destroy_eight_queens_array(eight_queen_array);
 }
 
+void eight_queens_simple_test() {
+
+    char *column_index_array = init_eight_queens_simple_array(8);
+
+    eight_queens_simple(column_index_array, 8, 0);
+
+    destroy_eight_queens_simple_array(column_index_array);
+}
 
 void queue_test() {
 
@@ -115,9 +124,9 @@ void list_test() {
     list_destroy(p_list);
 }
 
-void eight_queens_non_iterator_test(unsigned size){
+void eight_queens_non_iterator_test(unsigned size) {
 
-    unsigned * column_index_array = init_eight_queens_non_iterator_array(size);
+    char *column_index_array = init_eight_queens_non_iterator_array(size);
 
     eight_queens_non_iterator(column_index_array, size);
     destroy_eight_queens_non_iterator_array(column_index_array);
@@ -127,12 +136,13 @@ int main() {
 
     init_global_var();
 
-    eight_queens_non_iterator_test(5);
 //    list_test();
 //    queue_test();
 //    bucket_test();
 //    eight_queens_worse_test();
 //    eight_queen_iterator_test();
 
+//    eight_queens_simple_test();
+    eight_queens_non_iterator_test(5);
     return 0;
 }
