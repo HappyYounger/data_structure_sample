@@ -87,6 +87,30 @@
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h">
 			<Option target="data_structure_sample"/>
 		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.h">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.h">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.h">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.h">
+			<Option target="data_structure_sample"/>
+		</Unit>
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.c">
 			<Option target="data_structure_sample"/>
 		</Unit>
@@ -112,30 +136,6 @@
 			<Option target="data_structure_sample"/>
 		</Unit>
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.c">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.h">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.c">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.h">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.c">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.h">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.c">
-			<Option target="data_structure_sample"/>
-		</Unit>
-		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.h">
 			<Option target="data_structure_sample"/>
 		</Unit>
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/CMakeLists.txt">

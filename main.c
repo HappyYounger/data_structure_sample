@@ -6,10 +6,10 @@
 #include "simple_queue.h"
 #include "simple_list.h"
 #include "bucket_sample.h"
-#include "stack_eight_queens_worse.h"
-#include "stack_eight_queens_iterator.h"
-#include "stack_eight_queens_non_iterator.h"
-#include "stack_eight_quees_simple.h"
+#include "eight_queens/stack_eight_queens_worse.h"
+#include "eight_queens/stack_eight_queens_iterator.h"
+#include "eight_queens/stack_eight_queens_non_iterator.h"
+#include "eight_queens/stack_eight_quees_simple.h"
 
 unsigned *get_random_unsigned_array(unsigned size) {
 

@@ -5,7 +5,7 @@
 #include <stdlib.h>
 
 #include "stack_eight_queens_non_iterator.h"
-#include "global.h"
+#include "../global.h"
 
 
 int check_eight_queens_non_iterator_array(char *column_index_array, unsigned row, unsigned col) {
@@ -25,7 +25,7 @@ int check_eight_queens_non_iterator_array(char *column_index_array, unsigned row
 
 char *init_eight_queens_non_iterator_array(unsigned size) {
 
-    unsigned *column_index_array = malloc(sizeof(unsigned) * size);
+    char *column_index_array = malloc(sizeof(unsigned) * size);
 
     for (unsigned i = 0; i < size; ++i) {
 

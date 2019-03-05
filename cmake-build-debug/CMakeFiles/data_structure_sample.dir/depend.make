@@ -6,20 +6,36 @@ CMakeFiles/data_structure_sample.dir/bucket_sample.c.o: ../bucket_sample.c
 CMakeFiles/data_structure_sample.dir/bucket_sample.c.o: ../bucket_sample.h
 CMakeFiles/data_structure_sample.dir/bucket_sample.c.o: ../simple_list.h
 
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_iterator.c.o: ../eight_queens/stack_eight_queens_iterator.c
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_iterator.c.o: ../eight_queens/stack_eight_queens_iterator.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_iterator.c.o: ../global.h
+
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_non_iterator.c.o: ../eight_queens/stack_eight_queens_non_iterator.c
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_non_iterator.c.o: ../eight_queens/stack_eight_queens_non_iterator.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_non_iterator.c.o: ../global.h
+
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_worse.c.o: ../eight_queens/stack_eight_queens_worse.c
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_worse.c.o: ../eight_queens/stack_eight_queens_worse.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_worse.c.o: ../global.h
+
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_quees_simple.c.o: ../eight_queens/stack_eight_quees_simple.c
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_quees_simple.c.o: ../eight_queens/stack_eight_quees_simple.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_quees_simple.c.o: ../global.h
+
 CMakeFiles/data_structure_sample.dir/global.c.o: ../global.c
 CMakeFiles/data_structure_sample.dir/global.c.o: ../global.h
 
 CMakeFiles/data_structure_sample.dir/main.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../bucket_sample.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../eight_queens/stack_eight_queens_iterator.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../eight_queens/stack_eight_queens_non_iterator.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../eight_queens/stack_eight_queens_worse.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../eight_queens/stack_eight_quees_simple.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../global.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../main.c
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_list.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_queue.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_stack.h
-CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_iterator.h
-CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_non_iterator.h
-CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_queens_worse.h
-CMakeFiles/data_structure_sample.dir/main.c.o: ../stack_eight_quees_simple.h
 
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../simple_list.c
@@ -33,20 +49,4 @@ CMakeFiles/data_structure_sample.dir/simple_queue.c.o: ../simple_stack.h
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../simple_stack.c
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../simple_stack.h
-
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o: ../global.h
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o: ../stack_eight_queens_iterator.c
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o: ../stack_eight_queens_iterator.h
-
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o: ../global.h
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o: ../stack_eight_queens_non_iterator.c
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o: ../stack_eight_queens_non_iterator.h
-
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o: ../global.h
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o: ../stack_eight_queens_worse.c
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o: ../stack_eight_queens_worse.h
-
-CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o: ../global.h
-CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o: ../stack_eight_quees_simple.c
-CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o: ../stack_eight_quees_simple.h
 

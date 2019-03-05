@@ -6,21 +6,37 @@ CMakeFiles/data_structure_sample.dir/bucket_sample.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.c
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_iterator.c.o
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.c
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_non_iterator.c.o
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.c
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_worse.c.o
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.c
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_quees_simple.c.o
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.c
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
 CMakeFiles/data_structure_sample.dir/global.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.c
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
 CMakeFiles/data_structure_sample.dir/main.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/main.c
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.c
@@ -34,19 +50,3 @@ CMakeFiles/data_structure_sample.dir/simple_stack.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.c
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_iterator.c.o
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.c
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_iterator.h
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_non_iterator.c.o
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.c
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_non_iterator.h
-CMakeFiles/data_structure_sample.dir/stack_eight_queens_worse.c.o
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.c
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_queens_worse.h
-CMakeFiles/data_structure_sample.dir/stack_eight_quees_simple.c.o
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.c
- /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/stack_eight_quees_simple.h

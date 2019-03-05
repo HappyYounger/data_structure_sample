@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "global.h"
+#include "../global.h"
 #include "stack_eight_queens_worse.h"
 
 void init_chessboard(void *cb) {
