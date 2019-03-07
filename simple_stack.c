@@ -64,14 +64,14 @@ void push_stack(_p_stack pstack, _padt padt) {
 
             for (int i = 0; i < pstack->size; ++i) {
 
-                new_stack[i].n = pstack->p_adt[i].n;
+                new_stack[i].p_data = pstack->p_adt[i].p_data;
             }
 
             free(pstack->p_adt);
             pstack->p_adt = new_stack;
         }
 
-        pstack->p_adt[pstack->size].n = padt->n;
+        (pstack->p_adt[pstack->size].p_data) = padt->p_data;
         pstack->size++;
     }
 }
@@ -150,7 +150,7 @@ void push_linked_stack(_p_linked_stack p_linked_stack, _p_linked_adt p_linked_ad
 
         _p_linked_adt new_linked_adt = malloc(sizeof(_linked_adt));
 
-        new_linked_adt->n = p_linked_adt->n;
+        new_linked_adt->p_adt = p_linked_adt->p_adt;
         new_linked_adt->p_next = NULL;
 
         if (p_linked_stack->head == NULL) {

@@ -393,6 +393,33 @@ simple_stack.c.s:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/simple_stack.c.s
 .PHONY : simple_stack.c.s
 
+tree/tree.o: tree/tree.c.o
+
+.PHONY : tree/tree.o
+
+# target to build an object file
+tree/tree.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/tree/tree.c.o
+.PHONY : tree/tree.c.o
+
+tree/tree.i: tree/tree.c.i
+
+.PHONY : tree/tree.i
+
+# target to preprocess a source file
+tree/tree.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/tree/tree.c.i
+.PHONY : tree/tree.c.i
+
+tree/tree.s: tree/tree.c.s
+
+.PHONY : tree/tree.s
+
+# target to generate assembly for a file
+tree/tree.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/tree/tree.c.s
+.PHONY : tree/tree.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -432,6 +459,9 @@ help:
 	@echo "... simple_stack.o"
 	@echo "... simple_stack.i"
 	@echo "... simple_stack.s"
+	@echo "... tree/tree.o"
+	@echo "... tree/tree.i"
+	@echo "... tree/tree.s"
 .PHONY : help
 
 

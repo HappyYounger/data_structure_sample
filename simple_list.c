@@ -19,7 +19,6 @@ _p_list list_init(unsigned capacity) {
     p_list->size = 0;
     p_list->header = malloc(sizeof(_adt) * capacity);
 
-
     return p_list;
 }
 
@@ -70,7 +69,7 @@ void list_add(_p_list p_list, _padt padt) {
             list_expand(p_list);
         }
 
-        p_list->header[p_list->size++].n = padt->n;
+        p_list->header[p_list->size++].p_data = padt->p_data;
     }
 }
 
@@ -114,7 +113,7 @@ void list_remove(_p_list p_list, _padt padt) {
 
         for (int i = p_list->size - 1; i >= 0; --i) {
 
-            if (p_list->header[i].n == padt->n) {
+            if (p_list->header[i].p_data == padt->p_data) {
 
                 list_move(p_list, i, -1);
             }
@@ -128,7 +127,7 @@ void list_insert(_p_list p_list, unsigned index, _padt padt) {
     if (p_list != NULL && index < p_list->size) {
 
         list_move(p_list, index, 1);
-        p_list->header[index].n = padt->n;
+        p_list->header[index].p_data = padt->p_data;
     }
 }
 

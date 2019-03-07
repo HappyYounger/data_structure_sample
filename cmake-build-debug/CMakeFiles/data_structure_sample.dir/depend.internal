@@ -37,6 +37,7 @@ CMakeFiles/data_structure_sample.dir/main.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.c
@@ -50,3 +51,9 @@ CMakeFiles/data_structure_sample.dir/simple_stack.c.o
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.c
  /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+CMakeFiles/data_structure_sample.dir/tree/tree.c.o
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.c
+ /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.h

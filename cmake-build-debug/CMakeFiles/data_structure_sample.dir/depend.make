@@ -36,6 +36,7 @@ CMakeFiles/data_structure_sample.dir/main.c.o: ../main.c
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_list.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_queue.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_stack.h
+CMakeFiles/data_structure_sample.dir/main.c.o: ../tree/tree.h
 
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../simple_list.c
@@ -49,4 +50,10 @@ CMakeFiles/data_structure_sample.dir/simple_queue.c.o: ../simple_stack.h
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../simple_stack.c
 CMakeFiles/data_structure_sample.dir/simple_stack.c.o: ../simple_stack.h
+
+CMakeFiles/data_structure_sample.dir/tree/tree.c.o: ../adt.h
+CMakeFiles/data_structure_sample.dir/tree/tree.c.o: ../simple_queue.h
+CMakeFiles/data_structure_sample.dir/tree/tree.c.o: ../simple_stack.h
+CMakeFiles/data_structure_sample.dir/tree/tree.c.o: ../tree/tree.c
+CMakeFiles/data_structure_sample.dir/tree/tree.c.o: ../tree/tree.h
 

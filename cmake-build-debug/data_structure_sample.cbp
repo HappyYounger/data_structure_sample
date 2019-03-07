@@ -138,6 +138,12 @@
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h">
 			<Option target="data_structure_sample"/>
 		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.h">
+			<Option target="data_structure_sample"/>
+		</Unit>
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

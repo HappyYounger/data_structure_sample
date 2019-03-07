@@ -10,6 +10,7 @@
 #include "eight_queens/stack_eight_queens_iterator.h"
 #include "eight_queens/stack_eight_queens_non_iterator.h"
 #include "eight_queens/stack_eight_quees_simple.h"
+#include "tree/tree.h"
 
 unsigned *get_random_unsigned_array(unsigned size) {
 
@@ -81,11 +82,10 @@ void queue_test() {
     _linked_adt adt2;
     _linked_adt adt3;
     _linked_adt adt4;
-    adt1.n = 1;
-    adt2.n = 2;
-    adt3.n = 3;
-    adt4.n = 4;
-
+    adt1.p_adt = (void *) 1;
+    adt2.p_adt = (void *) 2;
+    adt3.p_adt = (void *) 3;
+    adt4.p_adt = (void *) 4;
 
     queue_add(p_queue, &adt1);
     queue_add(p_queue, &adt2);
@@ -109,11 +109,12 @@ void list_test() {
     _adt adt4;
     _adt adt5;
 
-    adt1.n = 0;
-    adt2.n = 1;
-    adt3.n = 2;
-    adt4.n = 3;
-    adt5.n = 4;
+
+    adt1.p_data = (void *) 0;
+    adt2.p_data = (void *) 1;
+    adt3.p_data = (void *) 2;
+    adt4.p_data = (void *) 3;
+    adt5.p_data = (void *) 4;
 
     list_add(p_list, &adt1);
     list_insert(p_list, 0, &adt2);
@@ -132,17 +133,78 @@ void eight_queens_non_iterator_test(unsigned size) {
     destroy_eight_queens_non_iterator_array(column_index_array);
 }
 
+_p_t_node make_a_tree() {
+
+    _adt adt;
+    adt.p_data = 'a';
+
+    _adt b_adt;
+    b_adt.p_data = 'b';
+
+    _adt c_adt;
+    c_adt.p_data = 'c';
+
+    _adt d_adt;
+    d_adt.p_data = 'd';
+
+    _adt e_adt;
+    e_adt.p_data = 'e';
+
+    _adt f_adt;
+    f_adt.p_data = 'f';
+
+    _adt g_adt;
+    g_adt.p_data = 'g';
+
+    _adt h_adt;
+    h_adt.p_data = 'h';
+
+    _adt i_adt;
+    i_adt.p_data = 'i';
+
+
+    _t_node root, b_node, c_node, d_node, e_node, f_node, g_node, h_node, i_node,
+            *p_root, *p_b_node, *p_c_node, *p_d_node, *p_e_node, *p_f_node, *p_g_node, *p_h_node, *p_i_node;
+
+    p_root = tree_init_node(&root, &adt);
+    p_b_node = tree_init_node(&b_node, &b_adt);
+    p_c_node = tree_init_node(&c_node, &c_adt);
+    p_d_node = tree_init_node(&d_node, &d_adt);
+    p_e_node = tree_init_node(&e_node, &e_adt);
+    p_f_node = tree_init_node(&f_node, &f_adt);
+    p_g_node = tree_init_node(&g_node, &g_adt);
+    p_h_node = tree_init_node(&h_node, &h_adt);
+    p_i_node = tree_init_node(&i_node, &i_adt);
+
+    tree_append_a_child(p_b_node, p_h_node);
+    tree_append_a_child(p_b_node, p_i_node);
+
+
+    return p_root;
+}
+
+void tree_first_traverse_test() {
+
+}
+
+void tree_last_traverse_test() {
+
+}
+
+void tree_level_traverse_test() {
+
+}
+
 int main() {
 
     init_global_var();
 
 //    list_test();
 //    queue_test();
-//    bucket_test();
 //    eight_queens_worse_test();
 //    eight_queen_iterator_test();
 
 //    eight_queens_simple_test();
-    eight_queens_non_iterator_test(5);
+//    eight_queens_non_iterator_test(5);
     return 0;
 }

@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/simple_list.c.o"
   "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/simple_queue.c.o"
   "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/simple_stack.c.o"
+  "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/tree/tree.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

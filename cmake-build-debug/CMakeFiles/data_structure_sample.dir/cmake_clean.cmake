@@ -9,6 +9,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_non_iterator.c.o"
   "CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_quees_simple.c.o"
   "CMakeFiles/data_structure_sample.dir/global.c.o"
+  "CMakeFiles/data_structure_sample.dir/tree/tree.c.o"
   "data_structure_sample.pdb"
   "data_structure_sample"
 )

@@ -34,7 +34,7 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
             }
 
             _adt adt;
-            adt.n = unsigned_array[i];
+            adt.p_data = unsigned_array[i];
             list_add(p_list_array[remain], &adt);
         }
 
@@ -48,7 +48,7 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
             int i = 0;
             while (i < p_list_array[j]->size) {
 
-                unsigned_array[index] = p_list_array[j]->header[i].n;
+                unsigned_array[index] = (unsigned) p_list_array[j]->header[i].p_data;
                 ++i;
                 ++index;
             }
