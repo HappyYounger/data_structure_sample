@@ -7,29 +7,35 @@
 
 #include "adt.h"
 
-typedef struct _List {
+typedef struct List {
 
     unsigned size;
     unsigned capacity;
-    _padt header;
+    _p_adt header;
 
+    _p_func_ad_assigns p_func_ad_assigns;
+    _p_func_ad_equals p_func_ad_equals;
 } _list, *_p_list;
 
 
-_p_list list_init(unsigned capacity);
+_p_list list_init(unsigned capacity,
+                  _p_func_ad_assigns p_func_ad_assigns,
+                  _p_func_ad_equals p_func_ad_equals);
+
+void list_append_ad(_p_list p_list, _p_adt p_ad);
 
 void list_destroy(_p_list p_list);
 
 _p_list list_expand(_p_list p_list);
 
-void list_add(_p_list p_list, _padt padt);
+void list_remove_ad_at(_p_list p_list, unsigned index);
 
-void list_remove_at(_p_list p_list, unsigned index);
+void list_remove_ad_if(_p_list p_list, _p_adt p_ad, _p_func_ad_meets_condition p_func_adt_meets_condition);
 
-void list_remove(_p_list p_list, _padt padt);
-
-void list_insert(_p_list p_list, unsigned index, _padt padt);
+void list_insert_ad(_p_list p_list, unsigned index, _p_adt p_ad);
 
 void list_clear(_p_list p_list);
+
+void list_print(_p_list p_list, _p_func_ad_prints print_ad);
 
 #endif //DATA_STRUCTURE_SAMPLE_SIMPLE_LIST_H

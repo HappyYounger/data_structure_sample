@@ -6,6 +6,7 @@
 #include <stdlib.h>
 #include "bucket_sample.h"
 #include "simple_list.h"
+#include "global.h"
 
 unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
@@ -17,7 +18,7 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
     for (int i = 0; i < 10; ++i) {
 
-        p_list_array[i] = list_init(16);
+        p_list_array[i] = list_init(RANDOM_COUNT, NULL, NULL);
     }
 
     while (count < size) {
@@ -35,7 +36,10 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
             _adt adt;
             adt.p_data = unsigned_array[i];
-            list_add(p_list_array[remain], &adt);
+            adt.size = sizeof(unsigned_array[i]);
+
+            _p_adt p_adt = ad_inits(&adt, adt.size);
+            list_append_ad(p_list_array[remain], p_adt->p_data);
         }
 
         BASE *= 10;

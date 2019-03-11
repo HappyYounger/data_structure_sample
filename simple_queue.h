@@ -7,14 +7,16 @@
 
 #include "simple_stack.h"
 
-typedef struct _Queue {
+typedef struct Queue {
 
     unsigned size;
     _p_linked_adt header;
     _p_linked_adt tail;
+    _p_func_ad_assigns p_func_ad_assigns;
+    _p_func_ad_equals p_func_ad_equals;
 } _queue, *_p_queue;
 
-_p_queue queue_init();
+_p_queue queue_init(_p_func_ad_assigns p_func_ad_assigns, _p_func_ad_equals p_func_ad_equals);
 
 void queue_destroy(_p_queue p_queue);
 

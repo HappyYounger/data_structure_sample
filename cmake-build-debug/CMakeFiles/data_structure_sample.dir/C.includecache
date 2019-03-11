@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
+stdbool.h
+-
 
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
 
@@ -50,6 +52,14 @@ tree/tree.h
 adt.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
 
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.c
+stdio.h
+-
+stdlib.h
+-
+simple_queue.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
+
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
 simple_stack.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
@@ -71,4 +81,6 @@ tree.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
 ../simple_queue.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
+../simple_list.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
 

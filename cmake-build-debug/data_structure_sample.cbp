@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h">
 			<Option target="data_structure_sample"/>
 		</Unit>

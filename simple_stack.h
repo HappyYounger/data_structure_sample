@@ -8,9 +8,9 @@
 
 #include "adt.h"
 
-typedef struct _Stack{
+typedef struct Stack{
 
-    _padt p_adt;
+    _p_adt p_adt;
     int capacity;
     int size;
 }_stack, * _p_stack;
@@ -22,9 +22,9 @@ typedef struct _Linked_Stack{
     int size;
 }_linked_stack, * _p_linked_stack;
 
-_padt pop_stack(_p_stack pstack);
-_padt top_stack(_p_stack pstack);
-void push_stack(_p_stack pstack, _padt padt);
+_p_adt pop_stack(_p_stack pstack);
+_p_adt top_stack(_p_stack pstack);
+void push_stack(_p_stack pstack, _p_adt padt);
 
 _p_stack init_stack(int capacity);
 void destroy_stack(_p_stack pstack);

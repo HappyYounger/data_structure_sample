@@ -123,6 +123,33 @@ data_structure_sample/fast:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/build
 .PHONY : data_structure_sample/fast
 
+adt.o: adt.c.o
+
+.PHONY : adt.o
+
+# target to build an object file
+adt.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/adt.c.o
+.PHONY : adt.c.o
+
+adt.i: adt.c.i
+
+.PHONY : adt.i
+
+# target to preprocess a source file
+adt.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/adt.c.i
+.PHONY : adt.c.i
+
+adt.s: adt.c.s
+
+.PHONY : adt.s
+
+# target to generate assembly for a file
+adt.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/adt.c.s
+.PHONY : adt.c.s
+
 bucket_sample.o: bucket_sample.c.o
 
 .PHONY : bucket_sample.o
@@ -429,6 +456,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... data_structure_sample"
+	@echo "... adt.o"
+	@echo "... adt.i"
+	@echo "... adt.s"
 	@echo "... bucket_sample.o"
 	@echo "... bucket_sample.i"
 	@echo "... bucket_sample.s"

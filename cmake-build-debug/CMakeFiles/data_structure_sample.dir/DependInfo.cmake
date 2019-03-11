@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/adt.c.o"
   "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/bucket_sample.c.o"
   "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_iterator.c.o"
   "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.c" "/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/cmake-build-debug/CMakeFiles/data_structure_sample.dir/eight_queens/stack_eight_queens_non_iterator.c.o"

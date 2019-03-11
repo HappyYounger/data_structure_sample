@@ -5,11 +5,14 @@
 #include <stdlib.h>
 #include "simple_queue.h"
 
-_p_queue queue_init() {
+_p_queue queue_init(_p_func_ad_assigns p_func_adt_assign, _p_func_ad_equals p_func_adt_equal) {
 
     _p_queue p_queue = malloc(sizeof(_queue));
     p_queue->size = 0;
     p_queue->header = p_queue->tail = NULL;
+
+    p_queue->p_func_ad_assigns = p_func_adt_assign;
+    p_queue->p_func_ad_equals = p_func_adt_equal;
 
     return p_queue;
 }
@@ -30,14 +33,14 @@ _p_linked_adt queue_add(_p_queue p_queue, _p_linked_adt p_linked_adt) {
         if (p_queue->size == 1) {
 
             p_queue->header = p_queue->tail = p_linked_adt;
-            p_linked_adt->p_next = NULL;
-            p_linked_adt->p_prev = NULL;
+            p_linked_adt->p_next_ad = NULL;
+            p_linked_adt->p_prev_ad = NULL;
 
         } else {
 
-            p_queue->tail->p_next = p_linked_adt;
-            p_linked_adt->p_next = NULL;
-            p_linked_adt->p_prev = p_queue->tail;
+            p_queue->tail->p_next_ad = p_linked_adt;
+            p_linked_adt->p_next_ad = NULL;
+            p_linked_adt->p_prev_ad = p_queue->tail;
 
             p_queue->tail = p_linked_adt;
         }
@@ -73,11 +76,11 @@ _p_linked_adt queue_remove(_p_queue p_queue) {
                 p_queue->header = p_queue->tail = NULL;
             } else {
 
-                p_queue->header = p_linked_adt->p_next;
-                p_queue->header->p_prev = NULL;
+                p_queue->header = p_linked_adt->p_next_ad;
+                p_queue->header->p_prev_ad = NULL;
             }
 
-            p_linked_adt->p_prev = p_linked_adt->p_next = NULL;
+            p_linked_adt->p_prev_ad = p_linked_adt->p_next_ad = NULL;
 
             return p_linked_adt;
         }
@@ -89,7 +92,7 @@ _p_linked_adt queue_remove(_p_queue p_queue) {
 
 void queue_clear(_p_queue p_queue) {
 
-    if(p_queue != NULL){
+    if (p_queue != NULL) {
 
         p_queue->size = 0;
 

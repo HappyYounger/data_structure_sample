@@ -30,7 +30,7 @@ void destroy_stack(_p_stack pstack) {
     }
 }
 
-_padt pop_stack(_p_stack pstack) {
+_p_adt pop_stack(_p_stack pstack) {
 
     if (pstack != NULL && pstack->p_adt != NULL && pstack->size > 0) {
 
@@ -41,7 +41,7 @@ _padt pop_stack(_p_stack pstack) {
     return NULL;
 }
 
-_padt top_stack(_p_stack pstack) {
+_p_adt top_stack(_p_stack pstack) {
 
     if (pstack != NULL && pstack->p_adt != NULL && pstack->size > 0) {
 
@@ -51,7 +51,7 @@ _padt top_stack(_p_stack pstack) {
 
 }
 
-void push_stack(_p_stack pstack, _padt padt) {
+void push_stack(_p_stack pstack, _p_adt padt) {
 
     if (pstack != NULL && pstack->p_adt != NULL && padt != NULL) {
 
@@ -60,18 +60,18 @@ void push_stack(_p_stack pstack, _padt padt) {
             int capacity = pstack->capacity * 2;
 
             pstack->capacity = capacity;
-            _padt new_stack = malloc(sizeof(_adt) * capacity);
+            _p_adt new_stack = malloc(sizeof(_adt) * capacity);
 
             for (int i = 0; i < pstack->size; ++i) {
 
-                new_stack[i].p_data = pstack->p_adt[i].p_data;
+                new_stack[i] = pstack->p_adt[i];
             }
 
             free(pstack->p_adt);
             pstack->p_adt = new_stack;
         }
 
-        (pstack->p_adt[pstack->size].p_data) = padt->p_data;
+        pstack->p_adt[pstack->size] = *padt;
         pstack->size++;
     }
 }
@@ -94,10 +94,10 @@ void destroy_linked_stack(_p_linked_stack p_linked_stack) {
 
         while (top != NULL) {
 
-            top = top->p_prev;
+            top = top->p_prev_ad;
             p_linked_stack->tail = top;
-            free(top->p_next);
-            top->p_next = NULL;
+            free(top->p_next_ad);
+            top->p_next_ad = NULL;
         }
 
         p_linked_stack->head = NULL;
@@ -114,11 +114,11 @@ _p_linked_adt pop_linked_stack(_p_linked_stack p_linked_stack) {
         _p_linked_adt top = p_linked_stack->tail;
 
         if (p_linked_stack->tail != NULL) {
-            p_linked_stack->tail = top->p_prev;
+            p_linked_stack->tail = top->p_prev_ad;
 
             if (p_linked_stack->tail != NULL) {
 
-                p_linked_stack->tail->p_next = NULL;
+                p_linked_stack->tail->p_next_ad = NULL;
             } else {
 
                 p_linked_stack->head = NULL;
@@ -150,18 +150,18 @@ void push_linked_stack(_p_linked_stack p_linked_stack, _p_linked_adt p_linked_ad
 
         _p_linked_adt new_linked_adt = malloc(sizeof(_linked_adt));
 
-        new_linked_adt->p_adt = p_linked_adt->p_adt;
-        new_linked_adt->p_next = NULL;
+        new_linked_adt->p_ad = p_linked_adt->p_ad;
+        new_linked_adt->p_next_ad = NULL;
 
         if (p_linked_stack->head == NULL) {
 
-            new_linked_adt->p_prev = NULL;
+            new_linked_adt->p_prev_ad = NULL;
             p_linked_stack->head = p_linked_stack->tail = new_linked_adt;
 
         } else {
 
-            new_linked_adt->p_prev = p_linked_stack->tail;
-            p_linked_stack->tail->p_next = new_linked_adt;
+            new_linked_adt->p_prev_ad = p_linked_stack->tail;
+            p_linked_stack->tail->p_next_ad = new_linked_adt;
             p_linked_stack->tail = new_linked_adt;
         }
 
