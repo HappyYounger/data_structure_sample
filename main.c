@@ -121,7 +121,7 @@ void list_test() {
     adt4.p_data = (void *) 3;
     adt5.p_data = (void *) 4;
 
-    adt1.size = adt2.size = adt3.size = adt4.size = adt5.size = sizeof(unsigned);
+    adt1.data_size = adt2.data_size = adt3.data_size = adt4.data_size = adt5.data_size = sizeof(unsigned);
 
     list_append_ad(p_list, &adt1);
     list_append_ad(p_list, &adt2);

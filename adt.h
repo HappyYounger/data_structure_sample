@@ -10,9 +10,8 @@
 typedef struct {
 
     void *p_data;
-    unsigned size;
+    unsigned data_size;
 } _adt, *_p_adt;
-
 
 typedef struct _Linked_ADT {
 
@@ -24,27 +23,37 @@ typedef struct _Linked_ADT {
 
 typedef struct {
 
+    _p_adt p_ad_element;
+    _p_adt p_ad_next;
+    _p_adt p_ad_previous;
+
+} _ad_element_record, *_p_ad_element_record;
+
+typedef struct {
+
     _p_adt ad_array;
-    unsigned size;
-    unsigned length;
-    unsigned current;
+
+    unsigned element_size;
+    unsigned pool_capacity;
+
+    char *p_ad_element_mapping;
+    unsigned mapping_length;
 
 } _ad_pool, *_p_ad_pool;
 
-_p_adt ad_gets_from_pool(_p_ad_pool p_ad_pool);
+_p_ad_pool ad_pool_init(unsigned element_size, unsigned pool_capacity);
 
-_p_adt ad_inits(void *p_ad, unsigned size);
+_p_ad_pool ad_pool_extend(_p_ad_pool p_ad_pool);
 
-_p_adt ad_assigns(void *p_ad1, void *p_ad2, unsigned size);
+_p_adt ad_pool_take_an_available(_p_ad_pool p_ad_pool);
 
-void ad_destroys(void *p_ad);
+_p_adt ad_pool_return_an_unavailable(_p_ad_pool p_ad_pool, _p_adt p_ad);
 
-_p_ad_pool ad_pool_inits(unsigned size, unsigned length);
+void ad_pool_destroy(_p_ad_pool p_ad_pool);
 
-void ad_pool_destroys(_p_ad_pool p_ad_pool);
+_p_adt ad_assign(void *p_ad1, void *p_ad2, unsigned size);
 
-_p_ad_pool ad_pool_extends(_p_ad_pool p_ad_pool);
-
+void ad_destroy(void *p_ad);
 
 typedef void (*_p_func_ad_assigns)(void *p_ad1, void *p_ad2);
 

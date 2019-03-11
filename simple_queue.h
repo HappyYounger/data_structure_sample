@@ -20,7 +20,7 @@ _p_queue queue_init(_p_func_ad_assigns p_func_ad_assigns, _p_func_ad_equals p_fu
 
 void queue_destroy(_p_queue p_queue);
 
-_p_linked_adt queue_add(_p_queue p_queue, _p_linked_adt p_linked_adt);
+_p_linked_adt queue_add(_p_queue p_queue, _p_linked_adt p_linked_ad);
 
 _p_linked_adt queue_peek(_p_queue p_queue);
 

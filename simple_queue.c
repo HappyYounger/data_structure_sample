@@ -24,25 +24,39 @@ void queue_destroy(_p_queue p_queue) {
 }
 
 
-_p_linked_adt queue_add(_p_queue p_queue, _p_linked_adt p_linked_adt) {
+_p_linked_adt queue_add(_p_queue p_queue, _p_linked_adt p_linked_ad) {
 
-    if (p_queue != NULL && p_linked_adt != NULL) {
+
+    if (p_queue != NULL && p_linked_ad != NULL) {
 
         ++p_queue->size;
 
         if (p_queue->size == 1) {
 
-            p_queue->header = p_queue->tail = p_linked_adt;
-            p_linked_adt->p_next_ad = NULL;
-            p_linked_adt->p_prev_ad = NULL;
+            if (p_queue->p_func_ad_assigns == NULL) {
+
+                p_queue->header = p_queue->tail = p_linked_ad;
+
+                _p_adt p_ad = ad_inits(p_linked_ad->p_ad, p_linked_ad->p_ad->data_size);
+
+                _p_linked_adt p_linked_ad_clone =
+
+            } else {
+
+
+                p_queue->p_func_ad_assigns(p_queue->header, p_linked_ad);
+                p_queue->p_func_ad_assigns(p_queue->tail, p_linked_ad);
+            }
+            p_linked_ad->p_next_ad = NULL;
+            p_linked_ad->p_prev_ad = NULL;
 
         } else {
 
-            p_queue->tail->p_next_ad = p_linked_adt;
-            p_linked_adt->p_next_ad = NULL;
-            p_linked_adt->p_prev_ad = p_queue->tail;
+            p_queue->tail->p_next_ad = p_linked_ad;
+            p_linked_ad->p_next_ad = NULL;
+            p_linked_ad->p_prev_ad = p_queue->tail;
 
-            p_queue->tail = p_linked_adt;
+            p_queue->tail = p_linked_ad;
         }
 
         return p_queue->tail;
