@@ -56,7 +56,7 @@ _p_list list_extend(_p_list p_list) {
 
     if (p_list != NULL) {
 
-        _p_adt p_adt_old = p_list->header;
+        _p_adt *p_adt_old = p_list->header;
 
         p_list->list_capacity *= 2;
         p_list->header = malloc(sizeof(_adt) * p_list->list_capacity);
@@ -118,32 +118,52 @@ void list_move(_p_list p_list, unsigned from, unsigned to) {
     }
 }
 
+unsigned list_find(_p_list p_list, _p_adt p_ad) {
+
+    if (p_list != NULL && p_ad != NULL) {
+
+        for (int i = 0; i < p_list->element_count; ++i) {
+
+            if ((p_list->p_func_ad_equal != NULL && p_list->p_func_ad_equal(p_list->header[i], p_ad))
+                || (p_list->p_func_ad_equal == NULL && p_list->header[i]->p_data == p_ad->p_data)) {
+
+                return i;
+            }
+        }
+    }
+
+    return -1;
+}
+
+unsigned list_remove(_p_list p_list, _p_adt p_ad) {
+
+    unsigned index = list_find(p_list, p_ad);
+
+    if (index >= 0) {
+
+        list_remove_ad_at(p_list, index);
+    }
+    return index;
+}
+
 void list_remove_ad_at(_p_list p_list, unsigned index) {
 
     list_move(p_list, index, index - 1);
 }
 
-void list_remove_ad(_p_list p_list, _p_adt p_ad) {
+void list_remove_ad_if(_p_list p_list, _p_func_ad_if p_func_ad_if) {
 
-//    if (p_list != NULL && p_list->header != NULL && p_list->element_size > 0) {
-//
-//        for (int i = p_list->element_size - 1; i >= 0; --i) {
-//
-//            if (p_list->p_func_ad_equal == NULL) {
-//
-//                if (p_list->header[i].ad == p_ad->ad) {
-//
-//                    list_move(p_list, i, -1);
-//                }
-//            } else if (p_list->p_func_ad_equal(p_list->header[i].ad, p_ad->ad)) {
-//
-//
-//            }
-//
-//
-//        }
-//
-//    }
+    if (p_list != NULL && p_func_ad_if != NULL) {
+
+        for (int i = p_list->element_count; i >= 0; --i) {
+
+            if (p_func_ad_if(p_list->header[i])) {
+
+                list_remove_ad_at(p_list, i);
+            }
+        }
+    }
+
 }
 
 void list_insert(_p_list p_list, unsigned index, _p_adt p_ad) {
@@ -167,7 +187,7 @@ void list_clear(_p_list p_list) {
     if (p_list != NULL) {
 
         p_list->element_count = 0;
-        ad_pool_reset(p_list->p_ad_pool);
+        ad_pool_clear(p_list->p_ad_pool);
     }
 }
 

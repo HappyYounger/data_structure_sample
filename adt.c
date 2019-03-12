@@ -132,7 +132,7 @@ _p_adt ad_pool_return_an_unavailable(_p_ad_pool p_ad_pool, _p_adt p_ad) {
         unsigned mapping_index = index / (sizeof(char) * 8);
         unsigned mapping_bit_index = index % (sizeof(char) * 8);
 
-        char mask = 1 << 7 - mapping_bit_index;
+        char mask = 1 << (7 - mapping_bit_index);
 
         p_ad_pool->p_ad_element_mapping[mapping_index] &= ~mask;
     }
@@ -153,7 +153,7 @@ _p_adt ad_build(_p_adt p_ad, void *p_data, unsigned data_size) {
     return NULL;
 }
 
-void ad_pool_reset(_p_ad_pool p_ad_pool) {
+void ad_pool_clear(_p_ad_pool p_ad_pool) {
 
     if (p_ad_pool != NULL) {
 

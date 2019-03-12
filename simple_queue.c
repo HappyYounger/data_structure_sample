@@ -41,6 +41,7 @@ _p_adt queue_add(_p_queue p_queue, _p_adt p_ad) {
         ad_assign(p_ad_clone, p_ad, sizeof(_adt), NULL);
 
         _p_linked_adt p_linked_ad = malloc(sizeof(_linked_adt));
+
         p_linked_ad->p_ad = p_ad_clone;
 
         if (p_queue->size == 0) {
@@ -111,7 +112,8 @@ void queue_clear(_p_queue p_queue) {
 
         p_queue->size = 0;
         memset(p_queue->p_ad_pool->p_ad_element_mapping, 0, p_queue->p_ad_pool->mapping_length);
-        p_queue->p_ad_pool;
+
+        ad_pool_clear(p_queue->p_ad_pool);
         p_queue->header = p_queue->tail = NULL;
     }
 }

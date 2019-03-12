@@ -11,7 +11,7 @@ typedef struct List {
 
     unsigned element_count;
     unsigned list_capacity;
-    _p_adt* header;
+    _p_adt *header;
 
     _p_func_ad_assign p_func_ad_assign;
     _p_func_ad_equal p_func_ad_equal;
@@ -28,9 +28,13 @@ void list_destroy(_p_list p_list);
 
 _p_list list_extend(_p_list p_list);
 
+unsigned list_find(_p_list p_list, _p_adt p_adt);
+
+unsigned list_remove(_p_list p_list, _p_adt p_ad);
+
 void list_remove_ad_at(_p_list p_list, unsigned index);
 
-void list_remove_ad_if(_p_list p_list, _p_adt p_ad, _p_func_ad_if p_func_ad_if);
+void list_remove_ad_if(_p_list p_list, _p_func_ad_if p_func_ad_if);
 
 void list_insert(_p_list p_list, unsigned index, _p_adt p_ad);
 

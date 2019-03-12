@@ -36,7 +36,7 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
             _adt ad;
 
-            ad_build(&ad, unsigned_array[i], sizeof(unsigned_array[i]));
+            ad_build(&ad, (void *) unsigned_array[i], sizeof(unsigned_array[i]));
 
             list_append(p_list_array[remain], &ad);
         }
