@@ -6,36 +6,39 @@
 #include <stdlib.h>
 #include "tree.h"
 
-//_p_t_node tree_init(_padt padt, _p_func_adt_assigns p_func_copy_adt) {
-//
-//    _p_t_node p_t_node = malloc(sizeof(_t_node));
-//
-//    p_t_node->p_parent = NULL;
-//    p_t_node->p_left_sibling = NULL;
-//    p_t_node->p_right_sibling = NULL;
-//
-//    p_t_node->children_count = 0;
-//    p_t_node->p_first_child = NULL;
-//
-//    if (p_func_copy_adt != NULL) {
-//
-//        _padt pdes = malloc(sizeof(_adt));
-//        p_func_copy_adt(pdes, padt);
-//    } else {
-//
-//        p_t_node->padt = padt;
-//    }
-//
-//    return p_t_node;
-//}
-//
-//void tree_destroy(_p_t_node p_t_node) {
-//
-//    if (p_t_node != NULL) {
-//
-//
-//    }
-//}
+static const unsigned _Pool_Capacity = 64;
+
+_p_t_node tree_init(_p_adt p_ad, _p_func_ad_assign p_func_ad_assign) {
+
+    if (p_ad != NULL) {
+        _p_t_node p_t_node = malloc(sizeof(_t_node));
+
+        p_t_node->p_ad_pool = ad_pool_init(sizeof(_adt), _Pool_Capacity);
+
+        p_t_node->p_parent = NULL;
+        p_t_node->p_left_sibling = NULL;
+        p_t_node->p_right_sibling = NULL;
+
+        p_t_node->children_count = 0;
+        p_t_node->p_first_child = NULL;
+
+        _p_adt p_ad_clone = ad_pool_take_an_available(p_t_node->p_ad_pool);
+
+        ad_assign(p_ad_clone, p_ad, sizeof(_adt), p_func_ad_assign);
+
+        return p_t_node;
+    }
+
+    return NULL;
+}
+
+void tree_destroy(_p_t_node p_t_node) {
+
+    if (p_t_node != NULL) {
+
+
+    }
+}
 //
 //
 ////_p_t_node tree_init_node(_p_t_node p_t_node, _padt padt) {
@@ -286,7 +289,7 @@
 //
 //    if (p_root_node != NULL) {
 //
-//        printf("%c", *((char *) p_root_node->padt->p_data));
+//        printf("%c", *((char *) p_root_node->p_ad->p_data));
 //        _p_t_node p_t_node = p_root_node->p_first_child;
 //
 //        while (p_t_node != NULL) {
@@ -312,7 +315,7 @@
 //            tree_root_last_traverse(p_t_node);
 //            p_t_node = p_t_node->p_right_sibling;
 //        }
-//        printf("%c", *((char *) p_root_node->padt->p_data));
+//        printf("%c", *((char *) p_root_node->p_ad->p_data));
 //    }
 //
 //    return NULL;

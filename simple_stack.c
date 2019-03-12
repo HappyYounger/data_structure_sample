@@ -12,67 +12,67 @@ _p_stack init_stack(int capacity) {
 
     ptrStack->capacity = capacity;
     ptrStack->size = 0;
-    ptrStack->p_adt = malloc(sizeof(_adt) * capacity);
+    ptrStack->p_ad = malloc(sizeof(_adt) * capacity);
 
     return ptrStack;
 }
 
-void destroy_stack(_p_stack pstack) {
+void destroy_stack(_p_stack p_stack) {
 
-    if (pstack != NULL) {
+    if (p_stack != NULL) {
 
-        if (pstack->p_adt != NULL) {
+        if (p_stack->p_ad != NULL) {
 
-            free(pstack->p_adt);
+            free(p_stack->p_ad);
         }
 
-        free(pstack);
+        free(p_stack);
     }
 }
 
-_p_adt pop_stack(_p_stack pstack) {
+_p_adt pop_stack(_p_stack p_stack) {
 
-    if (pstack != NULL && pstack->p_adt != NULL && pstack->size > 0) {
+    if (p_stack != NULL && p_stack->p_ad != NULL && p_stack->size > 0) {
 
-        pstack->size--;
-        return pstack->p_adt + pstack->size;
+        p_stack->size--;
+        return p_stack->p_ad + p_stack->size;
     }
 
     return NULL;
 }
 
-_p_adt top_stack(_p_stack pstack) {
+_p_adt top_stack(_p_stack p_stack) {
 
-    if (pstack != NULL && pstack->p_adt != NULL && pstack->size > 0) {
+    if (p_stack != NULL && p_stack->p_ad != NULL && p_stack->size > 0) {
 
-        return pstack->p_adt + pstack->size - 1;
+        return p_stack->p_ad + p_stack->size - 1;
     }
     return NULL;
 
 }
 
-void push_stack(_p_stack pstack, _p_adt padt) {
+void push_stack(_p_stack p_stack, _p_adt p_ad) {
 
-    if (pstack != NULL && pstack->p_adt != NULL && padt != NULL) {
+    if (p_stack != NULL && p_stack->p_ad != NULL && p_ad != NULL) {
 
-        if (pstack->capacity == pstack->size) {
+        if (p_stack->capacity == p_stack->size) {
 
-            int capacity = pstack->capacity * 2;
+            int capacity = p_stack->capacity * 2;
 
-            pstack->capacity = capacity;
+            p_stack->capacity = capacity;
             _p_adt new_stack = malloc(sizeof(_adt) * capacity);
 
-            for (int i = 0; i < pstack->size; ++i) {
+            for (int i = 0; i < p_stack->size; ++i) {
 
-                new_stack[i] = pstack->p_adt[i];
+                new_stack[i] = p_stack->p_ad[i];
             }
 
-            free(pstack->p_adt);
-            pstack->p_adt = new_stack;
+            free(p_stack->p_ad);
+            p_stack->p_ad = new_stack;
         }
 
-        pstack->p_adt[pstack->size] = *padt;
-        pstack->size++;
+        p_stack->p_ad[p_stack->size] = *p_ad;
+        p_stack->size++;
     }
 }
 

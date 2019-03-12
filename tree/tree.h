@@ -11,20 +11,22 @@
 
 typedef struct TreeNode {
 
-    _p_adt padt;
+    _p_adt p_ad;
     struct TreeNode *p_parent;
     struct TreeNode *p_right_sibling;
     struct TreeNode *p_left_sibling;
     struct TreeNode *p_first_child;
     unsigned children_count;
 
+    _p_ad_pool p_ad_pool;
+
 } _t_node, *_p_t_node;
 
-_p_t_node tree_init(_p_adt padt, _p_func_ad_assign p_func_copy_adt);
+_p_t_node tree_init(_p_adt padt, _p_func_ad_assign p_func_ad_assign);
 
 void tree_destroy(_p_t_node p_t_node);
 
-//_p_t_node tree_init_node(_p_t_node p_t_node, _padt padt);
+//_p_t_node tree_init_node(_p_t_node p_t_node, _padt p_ad);
 
 _p_t_node tree_append_a_child(_p_t_node p_parent_node, _p_t_node p_child_node);
 
@@ -46,6 +48,5 @@ _p_list tree_root_first_traverse(_p_t_node p_root_node);
 _p_list tree_root_last_traverse(_p_t_node p_root_node);
 
 _p_list tree_level_traverse(_p_t_node p_root_node);
-
 
 #endif //DATA_STRUCTURE_SAMPLE_TREE_H
