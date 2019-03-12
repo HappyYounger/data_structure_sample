@@ -31,6 +31,12 @@ unsigned *get_random_unsigned_array(unsigned size) {
     return NULL;
 }
 
+void print_ad(void *p_ad) {
+
+    printf("%2d ", (unsigned) ((_p_adt) p_ad)->p_data);
+}
+
+
 void destroy_random_unsigned_array(unsigned *unsigned_array) {
 
     if (unsigned_array != NULL) {
@@ -74,62 +80,59 @@ void eight_queens_simple_test() {
     destroy_eight_queens_simple_array(column_index_array);
 }
 
+
 void queue_test() {
 
-//    _p_queue p_queue = queue_init(NULL, NULL);
-//
-//    _linked_adt linked_adt1;
-//    _linked_adt linked_adt2;
-//    _linked_adt linked_adt3;
-//    _linked_adt linked_adt4;
-//
-//    linked_adt1.adt = (void *) 1;
-//    linked_adt2.adt = (void *) 2;
-//    linked_adt3.adt = (void *) 3;
-//    linked_adt4.adt = (void *) 4;
-//
-//    queue_add(p_queue, &linked_adt1);
-//    queue_add(p_queue, &linked_adt2);
-//    queue_add(p_queue, &linked_adt3);
-//    queue_add(p_queue, &linked_adt4);
-//
-//    queue_peek(p_queue);
-//
-//    queue_remove(p_queue);
-//
-//    queue_destroy(p_queue);
+    _p_queue p_queue = queue_init(NULL, NULL);
+
+    _adt ad1;
+    _adt ad2;
+    _adt ad3;
+    _adt ad4;
+
+    _p_adt p_adt1 = ad_build(&ad1, (void *) 1, sizeof(int));
+    _p_adt p_adt2 = ad_build(&ad2, (void *) 2, sizeof(int));
+    _p_adt p_adt3 = ad_build(&ad3, (void *) 3, sizeof(int));
+    _p_adt p_adt4 = ad_build(&ad4, (void *) 4, sizeof(int));
+
+    queue_add(p_queue, p_adt1);
+    queue_add(p_queue, p_adt2);
+    queue_add(p_queue, p_adt3);
+    queue_add(p_queue, p_adt4);
+
+    _p_adt p_ad = queue_peek(p_queue);
+    queue_poll(p_queue);
+    queue_print(p_queue, print_ad);
+    queue_clear(p_queue);
+    queue_destroy(p_queue);
 }
 
-void print_adt(_p_adt p_adt) {
-
-    printf("%2d ", (unsigned) p_adt->p_data);
-}
 
 void list_test() {
 
-    _p_list p_list = list_init(16, NULL, NULL);
+    _p_list p_list = list_init(sizeof(_adt), 16, NULL, NULL);
 
-    _adt adt1;
-    _adt adt2;
-    _adt adt3;
-    _adt adt4;
-    _adt adt5;
+    _adt ad1;
+    _adt ad2;
+    _adt ad3;
+    _adt ad4;
+    _adt ad5;
 
-    adt1.p_data = (void *) 0;
-    adt2.p_data = (void *) 1;
-    adt3.p_data = (void *) 2;
-    adt4.p_data = (void *) 3;
-    adt5.p_data = (void *) 4;
+    ad1.p_data = (void *) 10;
+    ad2.p_data = (void *) 1;
+    ad3.p_data = (void *) 2;
+    ad4.p_data = (void *) 3;
+    ad5.p_data = (void *) 4;
 
-    adt1.data_size = adt2.data_size = adt3.data_size = adt4.data_size = adt5.data_size = sizeof(unsigned);
+    ad1.data_size = ad2.data_size = ad3.data_size = ad4.data_size = ad5.data_size = sizeof(unsigned);
 
-    list_append_ad(p_list, &adt1);
-    list_append_ad(p_list, &adt2);
-    list_insert_ad(p_list, 0, &adt3);
-    list_insert_ad(p_list, 1, &adt4);
-    list_insert_ad(p_list, 0, &adt5);
+    list_append(p_list, &ad1);
+    list_append(p_list, &ad2);
+    list_insert(p_list, 0, &ad3);
+    list_insert(p_list, 1, &ad4);
+    list_insert(p_list, 0, &ad5);
 
-    list_print(p_list, print_adt);
+    list_print(p_list, print_ad);
 
     list_destroy(p_list);
 }
@@ -219,7 +222,7 @@ int main() {
 
     init_global_var();
 
-//    bucket_test();
+    bucket_test();
 //    list_test();
 //    queue_test();
 

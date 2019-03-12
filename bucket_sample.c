@@ -18,7 +18,7 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
     for (int i = 0; i < 10; ++i) {
 
-        p_list_array[i] = list_init(RANDOM_COUNT, NULL, NULL);
+        p_list_array[i] = list_init(sizeof(_adt), RANDOM_COUNT, NULL, NULL);
     }
 
     while (count < size) {
@@ -34,12 +34,11 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
                 ++count;
             }
 
-            _adt adt;
-            adt.p_data = unsigned_array[i];
-            adt.data_size = sizeof(unsigned_array[i]);
+            _adt ad;
 
-            _p_adt p_adt = ad_inits(&adt, adt.data_size);
-            list_append_ad(p_list_array[remain], p_adt->p_data);
+            ad_build(&ad, unsigned_array[i], sizeof(unsigned_array[i]));
+
+            list_append(p_list_array[remain], &ad);
         }
 
         BASE *= 10;
@@ -49,12 +48,15 @@ unsigned *bucket(unsigned *unsigned_array, unsigned size) {
 
         for (int j = 0; j < 10; ++j) {
 
-            int i = 0;
-            while (i < p_list_array[j]->element_count) {
+            if (p_list_array[j]->element_count > 0) {
 
-                unsigned_array[index] = (unsigned) p_list_array[j]->header[i].p_data;
-                ++i;
-                ++index;
+                int i = 0;
+                while (i < p_list_array[j]->element_count) {
+
+                    unsigned_array[index] = (unsigned) p_list_array[j]->header[i]->p_data;
+                    ++i;
+                    ++index;
+                }
             }
             list_clear(p_list_array[j]);
         }

@@ -20,7 +20,7 @@ typedef struct TreeNode {
 
 } _t_node, *_p_t_node;
 
-_p_t_node tree_init(_p_adt padt, _p_func_ad_assigns p_func_copy_adt);
+_p_t_node tree_init(_p_adt padt, _p_func_ad_assign p_func_copy_adt);
 
 void tree_destroy(_p_t_node p_t_node);
 

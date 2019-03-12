@@ -10,15 +10,77 @@
 stdbool.h
 -
 
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.c
+stdio.h
+-
+stdlib.h
+-
+bucket_sample.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
+simple_list.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
+global.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.c
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+../global.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+stack_eight_queens_iterator.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.h
 
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_iterator.h
 
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.c
+stdio.h
+-
+stdlib.h
+-
+stack_eight_queens_non_iterator.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.h
+../global.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_non_iterator.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.c
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+../global.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+stack_eight_queens_worse.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.h
 
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_queens_worse.h
 
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.c
+stdio.h
+-
+stdlib.h
+-
+memory.h
+-
+stack_eight_quees_simple.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.h
+../global.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/eight_queens/stack_eight_quees_simple.h
+
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.c
+global.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
 
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
 
@@ -52,14 +114,6 @@ tree/tree.h
 adt.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
 
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.c
-stdio.h
--
-stdlib.h
--
-simple_queue.h
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
-
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_queue.h
 simple_stack.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
@@ -67,14 +121,6 @@ simple_stack.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_stack.h
 adt.h
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
-
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.c
-stdio.h
--
-stdlib.h
--
-tree.h
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.h
 
 /Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/tree/tree.h
 ../adt.h
