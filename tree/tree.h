@@ -18,13 +18,19 @@ typedef struct TreeNode {
     struct TreeNode *p_first_child;
     unsigned children_count;
 
-    _p_ad_pool p_ad_pool;
-
 } _t_node, *_p_t_node;
 
-_p_t_node tree_init(_p_adt padt, _p_func_ad_assign p_func_ad_assign);
+typedef struct Tree {
 
-void tree_destroy(_p_t_node p_t_node);
+    _p_t_node root;
+    _p_ad_pool p_ad_pool;
+
+
+} _tree, *_p_tree;
+
+_p_tree tree_init(_p_adt p_ad_root, _p_func_ad_assign p_func_ad_assign);
+
+void tree_destroy(_p_tree p_tree);
 
 //_p_t_node tree_init_node(_p_t_node p_t_node, _padt p_ad);
 

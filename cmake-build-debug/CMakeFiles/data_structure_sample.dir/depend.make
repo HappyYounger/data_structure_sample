@@ -37,10 +37,14 @@ CMakeFiles/data_structure_sample.dir/main.c.o: ../eight_queens/stack_eight_queen
 CMakeFiles/data_structure_sample.dir/main.c.o: ../eight_queens/stack_eight_quees_simple.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../global.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../main.c
+CMakeFiles/data_structure_sample.dir/main.c.o: ../pool/pool.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_list.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_queue.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../simple_stack.h
 CMakeFiles/data_structure_sample.dir/main.c.o: ../tree/tree.h
+
+CMakeFiles/data_structure_sample.dir/pool/pool.c.o: ../pool/pool.c
+CMakeFiles/data_structure_sample.dir/pool/pool.c.o: ../pool/pool.h
 
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../adt.h
 CMakeFiles/data_structure_sample.dir/simple_list.c.o: ../simple_list.c

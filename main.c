@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <memory.h>
 
 #include "global.h"
 #include "simple_queue.h"
@@ -11,6 +12,7 @@
 #include "eight_queens/stack_eight_queens_non_iterator.h"
 #include "eight_queens/stack_eight_quees_simple.h"
 #include "tree/tree.h"
+#include "pool/pool.h"
 
 unsigned *get_random_unsigned_array(unsigned size) {
 
@@ -222,7 +224,8 @@ int main() {
 
     init_global_var();
 
-    bucket_test();
+
+//    bucket_test();
 //    list_test();
 //    queue_test();
 

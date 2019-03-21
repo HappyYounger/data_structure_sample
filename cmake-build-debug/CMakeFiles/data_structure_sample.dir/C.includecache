@@ -6,27 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
-stdbool.h
--
-
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.c
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/pool/pool.c
+pool.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/pool/pool.h
 stdio.h
 -
 stdlib.h
 -
-bucket_sample.h
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
-simple_list.h
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
-global.h
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
+string.h
+-
 
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/bucket_sample.h
-
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/global.h
-
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.h
-adt.h
-/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/adt.h
+/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/pool/pool.h
 

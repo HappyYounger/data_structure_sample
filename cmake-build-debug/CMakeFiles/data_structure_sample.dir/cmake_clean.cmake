@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/data_structure_sample.dir/global.c.o"
   "CMakeFiles/data_structure_sample.dir/tree/tree.c.o"
   "CMakeFiles/data_structure_sample.dir/adt.c.o"
+  "CMakeFiles/data_structure_sample.dir/pool/pool.c.o"
   "data_structure_sample.pdb"
   "data_structure_sample"
 )

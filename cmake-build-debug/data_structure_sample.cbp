@@ -123,6 +123,12 @@
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/main.c">
 			<Option target="data_structure_sample"/>
 		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/pool/pool.c">
+			<Option target="data_structure_sample"/>
+		</Unit>
+		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/pool/pool.h">
+			<Option target="data_structure_sample"/>
+		</Unit>
 		<Unit filename="/Users/yangguang/Documents/sunny/dev/workspaces/workspace-clion/data_structure_sample/simple_list.c">
 			<Option target="data_structure_sample"/>
 		</Unit>

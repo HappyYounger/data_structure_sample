@@ -339,6 +339,33 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/main.c.s
 .PHONY : main.c.s
 
+pool/pool.o: pool/pool.c.o
+
+.PHONY : pool/pool.o
+
+# target to build an object file
+pool/pool.c.o:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/pool/pool.c.o
+.PHONY : pool/pool.c.o
+
+pool/pool.i: pool/pool.c.i
+
+.PHONY : pool/pool.i
+
+# target to preprocess a source file
+pool/pool.c.i:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/pool/pool.c.i
+.PHONY : pool/pool.c.i
+
+pool/pool.s: pool/pool.c.s
+
+.PHONY : pool/pool.s
+
+# target to generate assembly for a file
+pool/pool.c.s:
+	$(MAKE) -f CMakeFiles/data_structure_sample.dir/build.make CMakeFiles/data_structure_sample.dir/pool/pool.c.s
+.PHONY : pool/pool.c.s
+
 simple_list.o: simple_list.c.o
 
 .PHONY : simple_list.o
@@ -480,6 +507,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pool/pool.o"
+	@echo "... pool/pool.i"
+	@echo "... pool/pool.s"
 	@echo "... simple_list.o"
 	@echo "... simple_list.i"
 	@echo "... simple_list.s"
