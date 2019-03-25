@@ -8,6 +8,8 @@
 #include "stack_eight_quees_simple.h"
 #include "../global.h"
 
+extern int count;
+
 char *init_eight_queens_simple_array(unsigned size) {
 
     if (size > 0) {

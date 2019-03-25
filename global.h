@@ -13,8 +13,4 @@
 #define EQ_QUEEN_MARK 'Q'
 #define WHITE_CHAR ' '
 
-int count;
-
-void init_global_var();
-
 #endif //DATA_STRUCTURE_SAMPLE_GLOBAL_VAR_H

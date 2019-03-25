@@ -9,7 +9,8 @@
 #define POOL_MAX 10
 #define TABLE_MAX POOL_MAX
 
-#define POOL_BASE_SIZE 8192
+//#define POOL_BASE_SIZE 8192
+#define POOL_BASE_SIZE 8
 #define BLOCK_SIZE 4
 
 /**

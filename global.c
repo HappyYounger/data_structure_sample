@@ -4,7 +4,4 @@
 
 #include "global.h"
 
-void init_global_var(){
-
-    count = 0;
-}
+int count = 0;

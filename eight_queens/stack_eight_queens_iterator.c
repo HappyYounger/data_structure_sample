@@ -8,7 +8,7 @@
 
 #include "../global.h"
 #include "stack_eight_queens_iterator.h"
-
+extern int count;
 char *init_eight_queens_array(unsigned size) {
 
     if (size > 0) {

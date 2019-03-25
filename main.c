@@ -220,9 +220,26 @@ void tree_level_traverse_test() {
 //    queue_destroy(p_queue);
 }
 
+
+void pool_test() {
+
+    _p_memory_pool p_pool = init_pool();
+
+    int *n_array = alloc_memory(p_pool, sizeof(int) * 4);
+
+    for (int i = 0; i < 4; ++i) {
+
+        n_array[i] = i * 10;
+    }
+    printf("hello my memory pool\n");
+
+    destroy_pool(p_pool);
+}
+
 int main() {
 
-    init_global_var();
+//    init_global_var();
+
 
 
 //    bucket_test();
@@ -231,9 +248,11 @@ int main() {
 
 //    tree_level_traverse_test();
 //    eight_queens_worse_test();
-//    eight_queen_iterator_test();
-
+//    eight_queens_iterator_test();
 //    eight_queens_simple_test();
-//    eight_queens_non_iterator_test(5);
+//    eight_queens_non_iterator_test(8);
+
+
+    pool_test();
     return 0;
 }

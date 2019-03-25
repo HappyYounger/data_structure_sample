@@ -9,7 +9,7 @@
 
 static void *alloc_memory_pool(unsigned index);
 
-static void *block_start_address(const void *p_start, unsigned block_index) {
+static const void *block_start_address(const void *p_start, unsigned block_index) {
 
     return p_start + block_index * BLOCK_SIZE;
 }
@@ -205,8 +205,17 @@ static void *try_alloc(const void *p_start, unsigned length, _p_alloc_table p_al
     return NULL;
 }
 
+
 static _p_memory_pool expand_memory_pool(_p_memory_pool p_pool) {
 
+    if (p_pool->pool_size < POOL_MAX) {
+
+        add_table(p_pool->p_table_list);
+        p_pool->pool_array[p_pool->pool_size] = alloc_memory_pool(p_pool->pool_size);
+        ++p_pool->pool_size;
+
+        return p_pool;
+    }
 
     return NULL;
 }
@@ -220,7 +229,7 @@ static void *try_alloc_memory(_p_memory_pool p_pool, unsigned size) {
         p_start = p_pool->pool_array[i];
         _p_alloc_table p_alloc_table = p_pool->p_table_list->table_array[i];
 
-        p_address = try_alloc(p_start, (i + 1) * POOL_BASE_SIZE, p_pool->p_table_list->table_array[i], size);
+        p_address = try_alloc(p_start, (i + 1) * POOL_BASE_SIZE, p_alloc_table, size);
 
         if (p_address != NULL) {
 
@@ -231,19 +240,13 @@ static void *try_alloc_memory(_p_memory_pool p_pool, unsigned size) {
 
             return p_address;
         }
-    }
 
-    while (p_address == NULL && p_pool->pool_size < POOL_MAX - 1) {
+        if (i == p_pool->pool_size - 1) {
 
-        expand_memory_pool(p_pool);
-        unsigned last_index = p_pool->pool_size - 1;
-        p_start = p_pool->pool_array[last_index];
-        p_address = try_alloc(p_start, p_pool->pool_size * POOL_BASE_SIZE,
-                              p_pool->p_table_list->table_array[last_index], size);
+            if (expand_memory_pool(p_pool) == NULL) {
 
-        if (p_address != NULL) {
-
-            return p_address;
+                return NULL;
+            }
         }
     }
 
@@ -260,10 +263,7 @@ _p_memory_pool init_pool() {
 
         p_pool->pool_size = 1;
         p_pool->pool_array[0] = alloc_memory_pool(0);
-        memset(p_pool->pool_array, 0, sizeof(void *));
-
         p_pool->p_table_list = init_table_list();
-
     }
 
     return p_pool;

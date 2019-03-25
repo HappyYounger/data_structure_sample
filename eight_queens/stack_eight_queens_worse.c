@@ -8,6 +8,7 @@
 #include "../global.h"
 #include "stack_eight_queens_worse.h"
 
+extern int count;
 void init_chessboard(void *cb) {
 
     memset(cb, EQ_INIT_MARK, QUEEN_COUNT * QUEEN_COUNT);

@@ -7,7 +7,7 @@
 #include "stack_eight_queens_non_iterator.h"
 #include "../global.h"
 
-
+extern int count;
 int check_eight_queens_non_iterator_array(char *column_index_array, unsigned row, unsigned col) {
 
     for (unsigned r = 0; r < row; ++r) {
